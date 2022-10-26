@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+	font-family: 'FonteLogo' ;
+	src: url(../_fonts/bubblegum-sans-regular.otf);
+}
+body{
+	background-color: #dddddd;
+}
+div#interface{
+	background-color: white;
+	font-family: Arial;
+	width: 1200px;
+	margin: -20px auto 0px auto;
+	padding: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+header#cabecalho img#icone{
+	position: absolute;
+	left: 1350px;
+	top: 40px;
+}
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background-image: url(../_imagens/glass-logo-peq.jpg);
+	background-repeat: no-repeat;
+	background-position: -7px 85px;
+}
+header#cabecalho h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 40px;
+	color: #606060;
+	padding: 0px;
+	margin-bottom: 0px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+}
+header#cabecalho h2{
+	font-family: Titillium Web;
+	margin: 0px;
+	color: #cecece;
+}
+p{
+	text-align: justify;
+	text-indent: 30px;
+}
+a{
+	text-decoration: none;
+	color: #606060;
+}
+a:hover{
+	text-decoration: underline;
+}
+figure.foto-legenda{
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px;
+	position: relative;
+}
+figure.foto-legenda img{
+	width: 100%;
+	height: 100%;
+}
+figure.foto-legenda figcaption{
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	color: white;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: opacity 0.3s;
+}
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+nav#menu{
+	position: absolute;
+	top: -20px;
+	left: 49%;
+}
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+}
+nav#menu li{
+	display: inline-block;
+	padding: 10px;
+	background-color: #dddddd;
+	transition: background-color 0.2s;
+}
+nav#menu li:hover{
+	background-color: #606060;
+}
+nav#menu h1{
+	display: none;
+}
+nav#menu a{
+	color: black;
+	text-decoration: none;
+}
+nav#menu a:hover{
+	color: white;
+}
+table#specs{
+	background-color: #606060;
+	border: 1px solid black;
+	border-spacing: 3px;
+	margin-right: auto;
+	margin-left: auto;
+}
+table#specs caption{
+	font-weight: bolder;
+	font-size: 14pt;
+	color: #888888;
+}
+table#specs caption span{
+	display: block;
+	float: right;
+	font-size: 8pt;
+	color: black;
+	margin-top: 10px;
+}
+table#specs sub{
+	text-align: right;
+}
+table#specs td.nome{
+	font-weight: bold;
+	text-align: right;
+	vertical-align: top;
+	color: white;
+	padding: 10px;
+}
+table#specs td.dados{
+	padding: 10px;
+	background-color: #cecece;
+}
+section#corpo{
+	display: block;
+	width: 670px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+section#corpo h2.titulo{
+	background-color: #cecece;
+	font-size: 15pt;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	color: #606060;
+	padding: 5px;
+}
+hgroup#titulo-pretexto h1{
+	font-size: 10pt;
+	color: #cecece;
+}
+hgroup#titulo-pretexto h2{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin: 0px;
+}
+hgroup#titulo-pretexto h3{
+	margin: 0px;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #cecece;
+}
+hgroup#titulo-pretexto h3 span{
+	display: block;
+	float: right;
+	font-size: 8pt;
+	color: black;
+}
+aside#lateral{
+	display: block;
+	background-color: #cecece;
+	box-shadow:  2px 2px 5px rgba(0, 0, 0, .5);
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	display: block;
+	width: 483px;
+	float: right;
+	padding: 10px;
+}
+aside#lateral h2.titulo{
+	background-color: #606060;
+	font-size: 15pt;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	color: white;
+	padding: 8px;
+}
+aside#lateral h2.titulo-noticias{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+}
+footer#rodape{
+	border-top: 1px solid #606060;
+	clear: both;
+}
+footer#rodape p{
+	text-align: center;
+}

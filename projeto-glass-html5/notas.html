@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="_css/estilo_notas.css">
+	<title>Anotações</title>
+	<!-- <script id="lampada" type="text/javascript">
+		function acendaLampada() {
+			// alert("Lampada acendeu");
+			document.getElementById("lampada").src = "_imagens/lampada-acesa.jpg";
+		}
+		function apagaLampada() {
+			document.getElementById("lampada").src = "_imagens/lampada-apagada.jpg"
+		}
+		function quebraLampada() {
+			document.getElementById("lampada").src = "_imagens/lampada-quebrada.jpg"
+		}
+	</script> -->
+	<script id="mudaLampada" type="text/javascript">
+		var quebrada = false;
+		function mudaLampada(tipo) {
+			if (quebrada == false) {
+				document.getElementById("lampada").src = "_imagens/" + tipo + ".jpg";
+				if (tipo == 'lampada-quebrada') { quebrada = true; }
+			}
+		}
+	</script>
+</head>
+<body>
+	<header id="cabecalho">
+		<h1>Anotações e testes utilizando JavaScript</h1>
+	</header>
+	<section id="notas">
+		<article>
+			<h1>Escrever a data atual</h1>
+			<span>
+				<script type="text/javascript">
+					document.write("Olá, hoje é dia "+Date());
+				</script>
+			</span>
+		</article>		
+		<article>
+			<h1>Acenda a lâmpada</h1>
+			<span>
+				<img src="_imagens/lampada-apagada.jpg" id="lampada" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')">
+			</span>
+		</article>
+	</section>
+</body>
+</html>

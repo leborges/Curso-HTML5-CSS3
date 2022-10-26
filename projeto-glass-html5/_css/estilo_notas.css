@@ -1,0 +1,45 @@
+body{
+	font-family: Arial, sans-serif;
+}
+header#cabecalho{
+	text-align: center;
+	font-family: Arial, sans-serif;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: underline;
+	background-color: #0180D4;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, .3);
+	padding: 20px;
+	margin: -8px;
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, .7);
+}
+section#notas{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 1px 20px 20px 20px;
+	text-align: center;
+	box-shadow: 4px 4px 7px rgba(0, 0, 0, .5);
+	background-color: #cecece;
+	height: 1000px;
+}
+section#notas article h1{
+	text-align: center;
+	padding: 10px;
+	margin: 0px;
+}
+section#notas article{
+	background-color: #e4a32f;
+	width: 23%;
+	height: 30%;
+	padding: 10px;
+	box-shadow: 4px 4px 7px rgba(0, 0, 0, .7);
+	margin: 20px 5px 5px 5px;
+	display: inline-block;
+}
+section#notas article span{
+	text-align: left;
+	display: block;
+	position: absolute;
+	word-wrap: normal;
+	width: 22%;
+}
